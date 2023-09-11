@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You may be suffering of:"
+        android:textSize="30sp"
+        android:textColor="#64BB33"
+        android:textAlignment="center"
+        android:layout_above="@id/diseases"
+        />
+    <TextView
+        android:id="@+id/diseases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#64BB33"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

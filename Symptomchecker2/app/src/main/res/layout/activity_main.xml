@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symptom Checker"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginText"
+        android:layout_marginBottom="55dp"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#64EE33"
+         />
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to continue as a(n):"
+        android:layout_centerInParent="true"
+        android:textSize="25sp"
+        android:textColor="#191919"
+        />
+
+    <Button
+        android:id="@+id/regularUser"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginText"
+        android:layout_marginTop="20dp"
+        android:text="Regular user"
+        android:backgroundTint="#64CC33"
+        />
+
+    <Button
+        android:id="@+id/specialUser"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/regularUser"
+        android:layout_marginTop="20dp"
+        android:text="Employee"
+        android:textColor="#FF0000"
+        android:backgroundTint="#33EEDD"
+        />
+
+
+</RelativeLayout>

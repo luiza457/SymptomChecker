@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a(n):"
+        android:textSize="30sp"
+        android:textColor="#64BB33"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title1"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/smoker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smoker"
+            android:textSize="17sp"
+            android:textColor="#191919"/>
+
+        <CheckBox
+            android:id="@+id/alcoholic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Alcoholic"
+            android:textSize="17sp"
+            android:textColor="#191919"/>
+
+        <CheckBox
+            android:id="@+id/workaholic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:text="Workaholic"
+            android:textSize="17sp"
+            android:textColor="#191919"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:layout_marginTop="20dp">
+
+        <RadioGroup
+            android:id="@+id/weightGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/underweight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Underweight"
+                android:textSize="17sp"
+                android:textColor="#191919" />
+
+            <RadioButton
+                android:id="@+id/overweight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Overweight"
+                android:textSize="17sp"
+                android:textColor="#191919" />
+
+            <RadioButton
+                android:id="@+id/obese"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Obese"
+                android:textSize="17sp"
+                android:textColor="#191919" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row2"
+        android:text="You can use our BMI calculator if unsure"
+        android:textSize="20sp"
+        android:textColor="#64BB33"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/bmirow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="Weight(kg): "
+            android:textSize="20sp"
+            android:textColor="#191919"/>
+
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#191919"
+            android:inputType="numberDecimal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="Height(m): "
+            android:textSize="20sp"
+            android:textColor="#191919"/>
+
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#191919"
+            android:inputType="numberDecimal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="="
+            android:textSize="20sp"
+            android:textColor="#191919"/>
+        <TextView
+            android:id="@+id/bmioutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#191919"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bmirow"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/compute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="Compute"
+            android:textColor="#FF0000"
+            android:backgroundTint="#33EEDD"
+            />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:text="Reset"
+            android:textColor="#FF0000"
+            android:backgroundTint="#33EEDD"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:text="Submit(5/5)"
+        android:backgroundTint="#64CC33"
+        />
+
+</RelativeLayout>

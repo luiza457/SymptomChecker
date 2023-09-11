@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am from:"
+        android:textSize="30sp"
+        android:textColor="#64CC33"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/regionList"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/regionList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:text="Next(3/5)"
+        android:backgroundTint="#64CC33"
+        />
+
+</RelativeLayout>
